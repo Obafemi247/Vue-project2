@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="project2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>INLINE EDITOR</title>
+
+</head>
+<body>
+
+ <div id="edit" v-cloak v-on:click="hideIconEdit" >
+ 	<div class="iconEdit" v-on:click.stop v-if="show_iconEdit"> 
+ 		<input v-model="message" type="text">
+ 	</div>
+ 	<p v-on:click.stop="toggleIconEdit"> <i class="fa fa-pencil"></i>{{ message | capitalize }}</p>
+ 		
+ </div>
+
+
+
+
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+ 	<script type="text/javascript" src="project2.js"></script>
+</body>
+</html>
