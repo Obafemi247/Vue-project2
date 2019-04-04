@@ -10,14 +10,10 @@
 
  <div id="edit" v-on:click="hideIconEdit" >
  	<div class="iconEdit" v-on:click.stop v-if="show_iconEdit"> 
- 		<input v-model="message" type="text">
+ 	     <input v-model="message" type="text">
  	</div>
- 	<p v-on:click.stop="toggleIconEdit"> <i class="fa fa-pencil"></i>{{ message | capitalize }}</p>
- 		
+ 	<p v-on:click.stop="toggleIconEdit"> <i class="fa fa-pencil"></i>{{ message | capitalize }}</p>		
  </div>
-
-
-
 
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
  	<script type="text/javascript" src="project2.js"></script>
